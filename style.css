@@ -1,11 +1,13 @@
 .hero {
-    background-image: url("stadium3.jpg");
-    height: 100vh;
+    background-image: url("stadium.png");
+    min-height: 500px;
+    height: 65 nvh;
     background-size: cover;
     background-position: center;
+    background-repeat:no-repeat;
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -48,66 +50,80 @@
     border-radius: 100px;
 }
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 50px;
-    color: black;
-}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+nav {
+    margin-top: 0;
+    background-image: url(nav.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: o 6px 6px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-}
-
-.logo span{
-    margin-left: 10px;
+    font-size: 1.8rem;
     font-weight: 700;
-    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
 }
 
-.navbar nav {
+.nav-links {
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 30px;
-    /* عايزين نحط صورة هنا تبقى خلفية مش عارف ازاي بصراحة */
-}
-.navbar nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
+    gap: 2rem;
 }
 
-.navbar nav a:hover {
-    opacity: 0.5;
-    lighting-color: white;
+.nav-links li a {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 10000;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    transition: 0.3;
 }
-.navbar button {
-    background: none;
+
+.nav-links li a:hover {
+    color: rgb(43, 0, 0);
+    text-shadow: 0 0 10px grey;
+}
+
+.btns {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: white;
+    color: black;
+    box-shadow: 0 0 15px grey;
     border: none;
-    color: white;
-    font-size: 20px;
     cursor: pointer;
+    transition: 0.3; 
 }
+
+.btns:hover {
+    box-shadow: 0 0 25px lightseagreen;
+}
+
+
 
 .history-btn {
     padding: 10px 18px;
@@ -223,23 +239,28 @@ body {
 }
 
 .history-preview {
-    padding: 100px 40px;
+    padding: 10px 10px;
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .history-header {
-    max-width: 13px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .history-header p {
     font-size: 13px;
     letter-spacing: 3px;
+    color: rgb(7, 7, 63);
+    font-weight: 700;
 }
 
 .history-header h2 {
-    font-size: 48px;
+    font-size: 28px;
     margin-top: 15px;
+    color: rgb(31, 25, 71);
 }
 
 .timeline {
@@ -308,35 +329,59 @@ body {
     line-height: 1.6;
 }
 
-.legends-preview {
-    padding: 100px 40px;
+.trophy-style {
+    padding: 0.5rem 1.5rem;
+    width: 170px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
     background: white;
+    color: black;
+    box-shadow: 0 0 15px grey;
+    cursor: pointer;
+    transition: 1; 
+    text-decoration: none;
+}
+
+.trophy-style:hover {
+    box-shadow: grey;
+    text-decoration: none;
+
+}
+
+.legends-preview {
+    padding: 50px 20px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .legends-header {
-    max-width: 600px;
+    max-width: 300px;
     margin-bottom: 30px;
 }
 .legends-header p {
-    font-size: 13px;
+    font-size: 23px;
     letter-spacing: 2px;
 }
 
 .legends-header h2 {
-    font-size: 48px;
+    font-size: 38px;
     margin-top: 15px;
 }
 
 .legend-cards {
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 .legend-card {
     flex: 1;
     height: 600px;
     position: relative;
     overflow:hidden;
-    border-radius: 8px;
+    border-radius: 40px;
     background: black;
 }
 
@@ -351,7 +396,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 25px;
+    padding: 15px;
     color: white;
     background: linear-gradiant(transparent, black)
 }
@@ -359,53 +404,54 @@ body {
 .legend-info h3 {
     font-size: 24px;
     margin-bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
 .legend-info p {
     font-size: 14px;
     opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
 .bernabeu-preview {
     min-height: 600px;
     background-image: url("bernabeu.jpg");
     background-size: cover;
+    background-repeat: no-repeat; 
     background-position: center;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 80px;
+    padding: 40px;
 }
 
 .bernabeu-preview::before {
-    content: "";
     position: absolute;
     inset: 0;
-    background: black;
 }
 
 .bernabeu-content {
     position: relative;
     z-index: 1;
     max-width: 600px;
-    color: white;
+    color: rgb(82, 30, 30);
 }
 
 .bernabeu-content > p:first-child {
     font-size: 13px;
     letter-spacing: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .bernabeu-content h2 {
     font-size: 52px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .bernabeu-content h2 + p {
     line-height: 1.7;
-    color: white;
-    margin-bottom: 30px;
+    color: rgb(107, 92, 55);
+    font-weight: 1000
 }
 
 .bernabeu-content a {
@@ -419,7 +465,7 @@ body {
 }
 
 .final-cta {
-    padding: 120px 80px;
+    padding: 60px 40px;
     text-align: center;
     background: black;
     color: white;
@@ -443,7 +489,7 @@ body {
 .cta-content h2 + p {
     color: white;
     line-height: 1.7;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .cta-content a {
@@ -504,7 +550,7 @@ body {
 }
 
 .footer-bottom {
-    padding-top: 25px;
+    padding-top: 20px;
     border-top: 1px solid #222121;
     display: flex;
     justify-content: space-between;
