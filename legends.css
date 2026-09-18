@@ -1,0 +1,200 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER  */
+.headerContainer {
+    background-color: #17191c;
+}
+.header {
+    /* position: sticky; */
+    /* top: 0; */
+    height: 80px;
+    background-color: #171818;
+    color: #7d0606;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.headerLinks {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+.headerLinks a {
+   
+    color: #f2f8f3;
+    text-decoration: none;
+}
+.headerLinks a:hover {
+    color: #7d0606;
+    
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.brand span {
+    color: #f8faf8;
+    font-size: 30px;
+    font-weight: 700;
+}
+.Logo {
+    width: 70px;
+height: auto;   
+}
+.hero {
+    height: 430px;
+    background-image:linear-gradient(
+        to right,
+        rgba(5, 15, 25, 0.85),
+        rgba(5, 15, 25, 0.2)
+      ),
+        url('images/sentiago bernabio.png');
+
+       background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:60px;
+    color:#f2f8f3;
+}
+.hero-small {
+    color: #c6a15b;
+    font-size: 12px;
+   letter-spacing: 1px;
+   margin:0 0 12px 0;
+}
+.hero h1 {
+    color: #f5f5f5;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height:  1.05;
+    margin:  0;
+    font-weight: 600;
+}
+    .hero h1 span {
+        color: #c6a15b;
+    }
+    .hero-text {
+    color: #d0d0d0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+/* TROPHIES SECTION */
+
+.trophies {
+    background-color: #f5f5f3;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 45px 65px;
+}
+
+/* LEFT SIDE */
+.trophies-intro {
+    width: 35%;
+}
+.section-small {
+    color: #b08a45;
+    font-size: 12px;
+    letter-spacing:1;
+       margin: 0 0 12px 0;
+       }
+ .trophies-intro h2 {
+    color:  #101820;
+    font-family: Georgia, serif;
+    font-size: 28;
+    line-height: 1.15;
+    margin: 0;
+  }
+  .section-text {
+    color: #626b73;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+   margin: 0;
+  }
+  /* TROPHIES */
+  .trophies-list {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   }
+   .trophy {
+    text-align: center;
+    padding:0 20px;
+      border-left: 1px solid #d6d6d6;
+   }
+.trophy:first-child {
+    border-left: none;
+}
+.trophy-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.trophy h3 {
+    color: #101820;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin:  0 0 8px 0;
+}
+/* LEGENDS SECTION */
+.legends {
+    background-color: #f5f5f3;
+    padding: 20px 65px 50px 65px;
+}
+/* FILTER BUTTONS */
+.fiters {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+.fiters button {
+    background-color:  transparent;
+    border:1px solid #d5d5d5;
+    color:#555;
+    font-size: 12px;
+    padding: 9px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+     font-family: 'Poppins', sans-serif;
+}
+
+/* ACTIVE BUTTON */
+.filters button:first-child {
+    background-color: #101820;
+    color: white;
+    border-color: #101820;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
