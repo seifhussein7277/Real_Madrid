@@ -13,7 +13,7 @@ body {
     /* position: sticky; */
     /* top: 0; */
     height: 80px;
-    background-color: #212424;
+    background-color: #171818;
     color: #7d0606;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ body {
     font-weight: 700;
 }
 .Logo {
-    width: 70px;
+    width: 70px; 
 height: auto;   
 }
 .hero {
@@ -56,7 +56,7 @@ height: auto;
         rgba(5, 15, 25, 0.85),
         rgba(5, 15, 25, 0.2)
       ),
-        url(sentiagobernabio.png);
+        url('sentiago bernabio.png');
 
        background-size:cover;
     background-position:center;
@@ -160,12 +160,12 @@ height: auto;
     padding: 20px 65px 50px 65px;
 }
 /* FILTER BUTTONS */
-.fiters {
+.filters {
     display: flex;
     gap: 50px;
     margin-bottom: 25px;
 }
-.fiters button {
+.filters button {
     background-color:  transparent;
     border:1px solid #d5d5d5;
     color:#555;
@@ -182,19 +182,123 @@ height: auto;
     color: white;
     border-color: #101820;
 }
+/* PLAYERS */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+.player-card {
+ width: 100%;
+ background-color: white;
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.player-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: center top;
+    display: block; 
+}
+.player-info {
+    padding: 15px;
+}
+.player-info p {
+    color: #c6a15b;
+    font-size: 10px;
+    margin: 0 0 6px 0;
+    letter-spacing: 1px;
+}
+.player-info h3 {
+    color: #101820;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 0 0 6px 0;
+}
+
+.player-info span {
+   color:  #777;
+   font-size: 11px;
+}
 
 
+/* PLAYER CARD - EXTRA INFO */
+.player-info{
+    padding:15px 18px 18px;
+}
+.player-info h3 {
+      color: #101820;
+      font-family: Georgia, serif;
+      font-size: 19px;
+      margin: 0 0 7px;
+}
+.player-details{
+    display: flex;
+    gap: 7px;
+    color: #777;
+    font-size: 10px;
+}
+/* ACHIEVEMENTS */
+
+.player-stats {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+    margin-top: 35px;
+    padding-top: 15px;
+}
+
+.stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat + .stat {
+    border-left: 1px solid #dddddd;
+    padding-left: 25px;
+}
+
+.stat strong {
+    color: #101820;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.stat small {
+    color: #777;
+    font-size: 13px;
+}
 
 
+/* QUOTE */
+.player-quote {
+    display: block;
+    width: 100%;
+
+    color: #555;
+    font-size: 15px;
+    line-height: 1.4;
+
+    margin-top: 2px;
+    margin-bottom: 10px;
+
+    font-style: italic;
+}
 
 
+/* ARROW */
 
+.player-arrow {
+    display: block;
+    text-align: right;
 
+    color: #101820;
+    font-size: 24px;
 
-
-
-
-
-
-
-
+    margin-top: 5px;
+}
