@@ -288,4 +288,76 @@ height: auto;
     color: #101820;
     font-size: 22px;
     margin-bottom: 2px;
+}.player-stats {
+    display: flex;
+    width: 55%;
 }
+.player-stats .stats {
+    width:50%;
+}
+.player-bottom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.player-quote{
+    width: 35%;
+    margin:0 !important;
+    font-size: 13px !important;
+    color: #555 !important;
+}
+.player-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player-info {
+    padding: 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+/* ضبط الإحصائيات (الأهداف والبطولات) فوق بعض */
+.player-stats, .stats {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin: 5px 0 !important;
+    padding: 0 !important;
+}
+
+.stat {
+    width: 100% !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.stat strong, .player-stats strong, .stats strong {
+    font-size: 18px !important;
+    color: #101820 !important;
+}
+
+/* ضبط الجملة والسهم تحت الإحصائيات */
+.player-quote {
+    width: 100% !important;
+    font-size: 12px !important;
+    color: #666 !important;
+    font-style: italic !important;
+    margin-top: 5px !important;
+}
+
+.player-arrow {
+    align-self: flex-end;
+    font-size: 18px !important;
+    color: #101820;
+    margin-top: 5px;
+}
+
+
+
+
+
