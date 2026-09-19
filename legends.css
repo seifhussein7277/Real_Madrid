@@ -10,8 +10,8 @@ body {
     background-color: #17191c;
 }
 .header {
-    /* position: sticky; */
-    /* top: 0; */
+    position: relative;
+    top: 0;
     height: 80px;
     background-color: #171818;
     color: #7d0606;
@@ -58,7 +58,7 @@ height: auto;
       ),
         url('sentiago bernabio.png');
 
-       background-size:cover;
+    background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
 
@@ -73,8 +73,8 @@ height: auto;
 .hero-small {
     color: #c6a15b;
     font-size: 12px;
-   letter-spacing: 1px;
-   margin:0 0 12px 0;
+    letter-spacing: 1px;
+    margin:0 0 12px 0;
 }
 .hero h1 {
     color: #f5f5f5;
@@ -84,10 +84,10 @@ height: auto;
     margin:  0;
     font-weight: 600;
 }
-    .hero h1 span {
+.hero h1 span {
         color: #c6a15b;
-    }
-    .hero-text {
+}
+.hero-text {
     color: #d0d0d0;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
@@ -113,34 +113,34 @@ height: auto;
     color: #b08a45;
     font-size: 12px;
     letter-spacing:1;
-       margin: 0 0 12px 0;
-       }
- .trophies-intro h2 {
+    margin: 0 0 12px 0;
+}
+.trophies-intro h2 {
     color:  #101820;
     font-family: Georgia, serif;
     font-size: 28px;
     line-height: 1.15;
     margin: 0;
-  }
-  .section-text {
+}
+.section-text {
     color: #626b73;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     line-height: 1.6;
-   margin: 0;
-  }
+    margin: 0;
+}
   /* TROPHIES */
-  .trophies-list {
+.trophies-list {
     width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-   }
-   .trophy {
+}
+.trophy {
     text-align: center;
     padding:0 20px;
-      border-left: 1px solid #d6d6d6;
-   }
+    border-left: 1px solid #d6d6d6;
+}
 .trophy:first-child {
     border-left: none;
 }
