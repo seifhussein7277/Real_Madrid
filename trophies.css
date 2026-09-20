@@ -1,17 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #080d16;
+    color: #ffffff;
+}
+
 .headerContainer {
     background-color: #17191c;
 }
 
 .header {
-    position: relative;
-    top: 0;
-    height: 80px;
-    background-color: #171818;
-    color: #ffffff;
+    height: 70px;
+    background-color: #060910;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 65px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .headerlinks {
@@ -21,12 +28,17 @@
 }
 
 .headerlinks a {
-    color: #f2f8f3;
+    color: #8c9ba5;
     text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
-.headerlinks a:hover {
-    color: #7d0606;
+.headerlinks a:hover, .headerlinks a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #c6a15b;
+    padding-bottom: 5px;
 }
 
 .brand {
@@ -36,9 +48,10 @@
 }
 
 .brand span {
-    color: #f8faf8;
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 16px;
     font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .logo {
@@ -87,4 +100,161 @@
     font-size: 13px;
     line-height: 1.5;
     margin-top: 15px;
+}
+
+.trophies-main {
+    padding: 50px 65px;
+    background-color: #080d16;
+}
+
+.section-small {
+    color: #c6a15b;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+}
+
+.section-header h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: white;
+    margin: 0 0 8px 0;
+    font-weight: 400;
+}
+
+.section-text {
+    color: #7f8e9d;
+    font-size: 13px;
+    margin: 0 0 40px 0;
+}
+
+.trophy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-card {
+    background-color: rgba(14, 22, 35, 0.6);
+    border: 1px solid rgba (255, 255, 255, 0.06);
+    border-radius: 4px;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3 ease, border-color 0.3s ease;
+}
+
+.grid-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(198, 161, 91, 0.4);
+    background-color: rgba(18, 28, 45, 0.8);
+}
+
+.card-icon {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-icon img {
+    max-height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.grid-card h4 {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.card-number {
+    color: #c6a15b;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.grid-card p {
+    color: #5c6b79;
+    font-size: 11px;
+    margin: 0;
+}
+
+.qoute-banner {
+    margin-top: 40px;
+    height: 160px;
+    border-radius: 4px;
+    background: linear-gradiant(rgba(8, 13, 22, 0.85), rgba(8,13,22,0.85)), url('stadium.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.crown-icon {
+    color: #c6a15b;
+    font-size: 14px
+}
+
+.quote-banner blockquote {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 16;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.quote-banner cite {
+    color: #7f8e9d;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-style: normal;
+    margin-top: 4px;
+}
+
+.footer {
+    background-color: #04060b;
+    padding: 25px 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand h3 {
+    color: #ffffff;
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.footer-brand span {
+    font-size: 9px;
+    color: #5c6b79;
+    display: block;
 }
