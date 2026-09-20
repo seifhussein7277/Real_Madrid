@@ -34,4 +34,9 @@ Seif Hussein => Home and Trophies page
 ## Teams Work
 
 ### Sam5 Tamer
+
 I've worked in the web in each HTML and CSS in 2 of 4 pages in the Project (Legends and Seasons) and brought the pictures for my Pages.
+
+### Seif Hussein
+
+I've worked in the web in Each HTML and CSS in 2 of 4 pages in the progect (Home & Trophies) and brought the pictures for my Pages.
